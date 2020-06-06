@@ -1,6 +1,6 @@
 # QuizApp
 
-A new Flutter project.
+A Personality Quiz App.
 
 ## Getting Started
 
