@@ -1,6 +1,6 @@
 # ExpenseTracker
 
-An Interactive Expense Tracker.
+A new Flutter project.
 
 ## Getting Started
 
