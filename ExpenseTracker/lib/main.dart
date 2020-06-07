@@ -10,7 +10,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Expense Tracker',
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.amberAccent,
+        fontFamily: 'Quicksand',
+        textTheme: ThemeData.light().textTheme.copyWith(
+                title: TextStyle(
+                  fontFamily: 'OpenSans',
+                  fontSize: 18 ,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+        appBarTheme: AppBarTheme(
+          textTheme: ThemeData.light().textTheme.copyWith(
+                title: TextStyle(
+                  fontFamily: 'OpenSans',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+        ),
+       ),
       home: MyHomePage(),
     );
   }
@@ -59,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
         return GestureDetector(
           onTap: () {},
           child: NewTransaction(_addNewTransaction),
-          behavior: HitTestBehavior.opaque ,
+          behavior: HitTestBehavior.opaque,
         );
       },
     );
